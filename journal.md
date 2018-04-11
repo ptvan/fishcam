@@ -8,25 +8,25 @@
 - Update firmware (`sudo rpi-update`)
 - Reboot, test camera with `raspistill`
 - Install development software (~20 minutes):  
-`sudo apt-get install build-essential git cmake pkg-config`
-`sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev`
-`sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev`
-`sudo apt-get install libxvidcore-dev libx264-dev`
-`sudo apt-get install libgtk2.0-dev`
-`sudo apt-get install libatlas-base-dev gfortran`
-- Install OpenCV (~2 hrs with 4 cores, overnight with 1)
-`git clone https://github.com/Itseez/opencv.git`
-`git clone https://github.com/Itseez/opencv_contrib.git` 	
-`cd opencv`
-`mkdir build`
-`cd build`
-`cmake -D CMAKE_BUILD_TYPE=RELEASE \`
-`    -D CMAKE_INSTALL_PREFIX=/usr/local \`
-`    -D INSTALL_C_EXAMPLES=OFF \`
-`    -D INSTALL_PYTHON_EXAMPLES=ON \`
-`    -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \`
-`    -D BUILD_EXAMPLES=ON ..`
-`make -j4`
-`sudo make install`
-`sudo ldconfig`
+`sudo apt-get install build-essential git cmake pkg-config`  
+`sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev`  
+`sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev`  
+`sudo apt-get install libxvidcore-dev libx264-dev`  
+`sudo apt-get install libgtk2.0-dev`  
+`sudo apt-get install libatlas-base-dev gfortran`  
+- Install OpenCV (~2 hrs with 4 cores, overnight with 1)  
+`git clone https://github.com/Itseez/opencv.git`  
+`git clone https://github.com/Itseez/opencv_contrib.git`   	
+`cd opencv`  
+`mkdir build`  
+`cd build`  
+`cmake -D CMAKE_BUILD_TYPE=RELEASE \`  
+`    -D CMAKE_INSTALL_PREFIX=/usr/local \`  
+`    -D INSTALL_C_EXAMPLES=OFF \`  
+`    -D INSTALL_PYTHON_EXAMPLES=ON \`  
+`    -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \`  
+`    -D BUILD_EXAMPLES=ON ..`  
+`make -j4` (remove `-j4` to use 1 core, likely safer...)  
+`sudo make install`  
+`sudo ldconfig`  
 
