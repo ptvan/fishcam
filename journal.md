@@ -1,4 +1,4 @@
-## 2018-04-11
+## 2018-04-10
 
 - Buy [CanaKit Raspberry Pi 3 Complete Starter Kit - 32 GB Edition](https://www.canakit.com/raspberry-pi-3-starter-kit.html) ($70) and [Camera Module V2](https://www.amazon.com/gp/product/B01ER2SKFS) ($26)
 - Connect camera to Raspberry (blue side of ribbon faces audio out as seen [here](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/4) )
@@ -16,7 +16,7 @@
 `sudo apt-get install libatlas-base-dev gfortran`  
 - Install OpenCV (~2 hrs with 4 cores, overnight with 1)  
 `git clone https://github.com/Itseez/opencv.git`  
-`git clone https://github.com/Itseez/opencv_contrib.git`   	
+`git clone https://github.com/Itseez/opencv_contrib.git`  
 `cd opencv`  
 `mkdir build`  
 `cd build`  
