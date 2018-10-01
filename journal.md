@@ -33,5 +33,8 @@
 `sudo ldconfig`  
 
 ## 2018-04-11
-- Found some useful notes on optimizing OpenCV on Raspberry pi: [here](https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/). Most notably, that adding `CONF_SWAPSIZE=1024` to ```/etc/dphys-swapfile``` then rebooting will increase swap to 1GB and allow compiling with 4 cores (see note previous day) . Unfortunately, this wears out the microSD card so should change back `CONF_SWAPSIZE=100` after compiling is done.
+- Found some useful notes on optimizing OpenCV on Raspberry Pi: [here](https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/). Most notably, that adding `CONF_SWAPSIZE=1024` to ```/etc/dphys-swapfile``` then rebooting will increase swap to 1GB and allow compiling with 4 cores (see note previous day) . Unfortunately, this wears out the microSD card so should change back `CONF_SWAPSIZE=100` after compiling is done.
 - Wrote a bit of code to fetch video stream from camera in Python and call openCV functions 
+
+## 2018-04-18
+- Switched to an off-line/asynchronous approach since Raspberry Pi doesn't have power for real-time processing, nor do we need real-time processing for a count
